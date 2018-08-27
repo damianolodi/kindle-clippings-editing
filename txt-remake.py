@@ -25,6 +25,7 @@ for index, line in enumerate(all_lines):
         pos = line.split()[9]
         string = all_lines[index+2][:-1] + " - p%s, pos%s\n\n" % (pagina, pos)
         new_file.write(string)
+        index = index + 3
 
 
 new_file.close()
